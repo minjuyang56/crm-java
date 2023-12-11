@@ -8,9 +8,6 @@ public class HelloWorld{
         int month = s.nextInt(); 
         int day_per_month = 0;
 
-        for (int i = 0; i<5; i++){
-            print(i * "*");
-        }
         System.out.println(day_per_month + "일");
     }
 }
