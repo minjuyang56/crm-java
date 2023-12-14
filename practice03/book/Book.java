@@ -13,11 +13,11 @@ public class Book {
     }
 
     public void rent(){ // 여기서 statecode 변경함 
-
+        this.stateCode = 1;
     }
 
     public void print(){ // <책제목 저자 대여유무> 출력
-
+        System.out.println(String.format("책 제목: %s   저자: %s   대여유무: %d", this.title, this.author, this.stateCode));
     }
 
     public int getBookNo(){
