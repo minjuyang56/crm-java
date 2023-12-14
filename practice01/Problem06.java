@@ -10,10 +10,17 @@ public class Problem06 {
 		System.out.println("숫자를 입력하세요");
 		int num = sc.nextInt();
 		int i;
-		int startNum;
-		int sum =0 ;
+		int sum = 0 ;
 		
-		//코드작성
+		if (num % 2 == 0){
+			for(i=2; i<=num; i+=2){
+				sum += i;
+			}
+		}else{
+			for(i=1; i<=num; i+=2){	
+				sum += i;
+			}
+		}
 		
 		System.out.println("결과값: " + sum);
 		sc.close();

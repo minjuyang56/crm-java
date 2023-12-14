@@ -6,7 +6,7 @@ public class Problem04 {
     public static void main(String[] args) {
 
         int[] wonArray = new int[10];
-        wonArray[0] = 50000;s
+        wonArray[0] = 50000;
         wonArray[1] = 10000;
         wonArray[2] = 5000;
         wonArray[3] = 1000;

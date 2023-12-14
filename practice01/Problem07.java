@@ -9,7 +9,6 @@ public class Problem07 {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-
             String retry;
             int num = (int) (Math.random() * 100) + 1;
             int inputNum;
@@ -21,16 +20,23 @@ public class Problem07 {
 
                 System.out.print(">>");
                 //사용자 입력값 받기
-
+                inputNum = sc.nextInt();
                 //입력한 값 높은지 낮은지 맞추었는지 판단
-
+                if (inputNum > num){
+                    System.err.println("더 낮게");
+                } else if (inputNum < num){
+                    System.out.println("더 높게");
+                } else{
+                    System.out.println("맞았습니다.");
+                    break;
+                }
             }
             sc.nextLine();
 
             System.out.print("게임을 종료하시겠습니까?(y/n) >>");
             retry = sc.next();
             if ("y".equals(retry)) {
-                //y일때 종료시키기
+                break;
             }
         }
 
