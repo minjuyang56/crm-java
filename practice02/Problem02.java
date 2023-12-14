@@ -1,4 +1,4 @@
-package practice02.com.javaex.practice;
+package practice02;
 
 import java.util.Scanner;
 
