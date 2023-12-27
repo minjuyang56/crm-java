@@ -3,8 +3,6 @@ package dao.book;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.time.LocalDate;
-import dao.book.BookVO;
 
 public class BookApp {
 
@@ -44,7 +42,7 @@ public class BookApp {
 		// PRINT
 		List<BookVO> resultList = dao.findKeyword(keyword);
 		for(BookVO vo : resultList) {
-      		System.out.println(vo);
-    	}
+			System.out.println(vo.toStringWithAuthorName());
+		}
 	}
 }

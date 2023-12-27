@@ -194,7 +194,8 @@ public class BookDaoImpl implements BookDao {
 					   "        TO_CHAR(b.PUB_DATE, 'YYYY/MM/DD' ) pubdate, \n" + 
 					   "        a.AUTHOR_NAME \n" + 
 					   " FROM BOOK b, AUTHOR a \n" + 
-					   " WHERE b.TITLE || b.PUBS || a.AUTHOR_NAME LIKE ? ";
+					   " WHERE a.AUTHOR_ID = b.AUTHOR_ID \n" + 
+					   " AND b.TITLE || b.PUBS || a.AUTHOR_NAME LIKE ? ";
 		  pstmt = conn.prepareStatement(sql);
 		  pstmt.setString(1, "%"+keyword+"%");
 

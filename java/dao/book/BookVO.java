@@ -69,6 +69,10 @@ public class BookVO {
 
     @Override
     public String toString() {
+        return "BookVO [book_id=" + author_id + ", book_title=" + book_title + ", book_pubs=" + book_pubs + ", book_pub_date=" + book_pub_date + ", author_id=" + author_id + "]";
+    }
+
+    public String toStringWithAuthorName(){
         return "BookVO [book_id=" + author_id + ", book_title=" + book_title + ", book_pubs=" + book_pubs + ", book_pub_date=" + book_pub_date + ", author_name=" + author_name + "]";
     }
 }
