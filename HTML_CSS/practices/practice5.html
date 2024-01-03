@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+// number = 5;
+// anotherNumber = new Number(5);
+// pi = 3.14
+// string = "Hello, I'm a string!"
+// anotherString = new String( "Hello, I'm a string!" );
+// used = false;
+// alert( typeof number)
+// alert( typeof anotherNumber + ":" + ( anotherNumber + 10 ) );
+// alert( typeof pi )
+// alert( typeof string )
+// alert( typeof anotherString )
+// alert( typeof used )
+// var myVar, myVar2 = null;
+// alert( myVar + ", " + myVar2 );
+// alert( myVar == myVar2 );
+// alert( myVar === myVar2 );
+strBefore = "<table border='1'>"+
+            "<tr>" +
+            "<th>2단</th>" +
+            "<th>3단</th>" +
+            "<th>4단</th>" +
+            "<th>5단</th>"  +
+            "<th>6단</th>"  +
+            "<th>7단</th>"  +
+            "<th>8단</th>"  +
+            "<th>9단</th>"  +
+            "</tr>" +
+            "<tr>";
+strAfter = "</tr></table>";
+document.write(strBefore);
+for(i=2; i<10; i++){
+  document.write( "<td>");
+  for(j=1; j<10; j++){
+    document.write(  i + "X" +  j + "=" + i*j +"<br>");
+  }
+  document.write( "</td>");
+}
+document.write(strAfter);
+</script>
+</head>
+<body>
+</body>
+</html>

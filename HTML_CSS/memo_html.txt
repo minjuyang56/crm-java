@@ -1,0 +1,31 @@
+<th>: table head
+<tr>: table row
+<td>: table data
+
+<p>: paragraph 단락을 나타내는 태그
+<br>: line break 줄바꿈
+
+
+
+URL, URI 차이:
+- 
+
+Java Script:
+- 즉시 실행 함수: 정의와 동시에 실행 
+    ex) (function sum(n1, n2){ return n1 + n2 })
+- HTML 내에 <script>를 사용하여 포함, 실행시킬 수 있음
+
+DOM (Document Object Model):
+- 문서를 코드로 나타내고싶다.. 어캐 나타내지?
+- 계층화된 트리구조로 
+- 그러려면 문서의 부분부분들을 노드 형식으로(객체 형식으로) 나타내야겠쥬?
+- 따라서 "문서를 객체로" 나타낼 때 사용하는 특정 형식을 정해야됨 -> DOM 탄생
+-  br, body , head 등등 태그들이 다 object임
+
+제이쿼리?
+- css selector 방식으로 동적 구현해주기 쉬움 (JS로는 복잡한 것)
+    ex) $("#second > li").css("color", "red")
+- import 방법:
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
